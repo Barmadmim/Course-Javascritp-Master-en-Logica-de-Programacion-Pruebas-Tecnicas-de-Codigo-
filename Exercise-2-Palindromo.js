@@ -7,10 +7,23 @@
 -Unir el array de letras en un string y comparar con el parámetro
 
 */
-function Polindromo(texto){
-    //hacemos un array
+function Palimdromo(text){
+    let invertido = text
+    .split('') //pone la palabras separadas por ''
+    .reverse() //Invierte la palabra
+    .join(''); //vuelve a unir las palabra quita ''
+
+    return (invertido === texto); //iguala si son iguales
+    
+}
+
+console.log("¿Es un Palindromo?" +  palindromo("ana"))
+
+/*
+function Palindromo(texto){
+    //hacemos un array = ['a', 'n', 'a']
     let arrayTexto = texto.split('');
-    //le damos la vuelta al array
+    //le damos la vuelta al array 
     let arrayTextoDadaVuelta = arrayTexto.reverse();
     //unimos el array
     let nombreFinal = arrayTextoDadaVuelta.join('');
@@ -26,11 +39,12 @@ function Polindromo(texto){
 
 }
 
-console.log(Polindromo("ana"));
+console.log(Palindromo("ana"));
+*/
 
-/*Otra forma de hacerlo más fácil*/
+/*Otra forma de hacerlo más fácil
 
-function Polindromo(texto){
+function Palindromo(texto){
     //hacemos un array
     let arrayTexto = texto.split('');
     //le damos la vuelta al array
@@ -44,4 +58,6 @@ function Polindromo(texto){
 
 }
 
-console.log(Polindromo("pedro"));
+console.log(Palindromo("pedro"));
+
+*/
