@@ -16,10 +16,10 @@ return:
 
 //Así pintamos los lados de arriba y abajo
 function lado(numero){
-    let lado="";
+    let lado = "";
 
-    for(let i=0; i<numero;i++){
-        lado+= "*";
+    for( let i = 0; i < numero; i++ ){
+        lado += "*";
     }
 
     return lado;
@@ -29,8 +29,21 @@ function lado(numero){
 function cuadrado(numero){
     let dibujo = lado(numero) + "\n";
 
-    dibujo=dibujo+lado(numero);
+    let contenido = "";
+
+    for( let i = 0; 1 < (numero - 2); i++){
+        contenido = "*";
+
+        for( let x = 0; x < (numero - 2); x++ ){
+            contenido += "";
+        }
+        contenido += "*";
+        dibujo += contenido + "\n"
+    }
+
+    dibujo += lado(numero);
+
     return dibujo;
 }
 
-console.log(cuadrado(4))
+console.log(cuadrado(4));
