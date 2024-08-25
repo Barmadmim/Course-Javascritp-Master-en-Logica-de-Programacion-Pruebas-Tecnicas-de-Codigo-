@@ -19,7 +19,8 @@ function InvertirNumero(numero){
     .toString()
     .split()
     .reverse()
-    .join());
+    .join()
+) * Math.sign(numero);
 
     return invertido
 }
