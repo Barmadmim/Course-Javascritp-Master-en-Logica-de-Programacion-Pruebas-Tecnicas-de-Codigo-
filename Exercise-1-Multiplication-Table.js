@@ -1,5 +1,5 @@
 
-*/
+/*
 Como hacerlo:
 -Funcion con parametro "numero"
 -Variable con texto encabezado
