@@ -10,4 +10,4 @@ function tantoPorCiento(porcentaje, numero){
     return `El ${porcentaje}% de ${numero} es ${operacion}`;
 }
 
-console.log(tantoPorCiento(50, 2));
+console.log(tantoPorCiento(50, 200));
