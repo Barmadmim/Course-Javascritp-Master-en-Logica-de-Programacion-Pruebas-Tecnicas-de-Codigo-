@@ -1,4 +1,7 @@
-/*Dada una palabra, buscarla en una frase y devolver cuantas veces aparece 
+/*
+Enunciado Ejercisio 3:
+
+Dada una palabra, buscarla en una frase y devolver cuantas veces aparece 
 en ella. La frase y la palabra deben ser parámetros de una función
 
 Cómo hacerlo:
