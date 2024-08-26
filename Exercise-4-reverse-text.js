@@ -1,5 +1,8 @@
-/*Dada una cadena de texto, darle la vuelta e invertir el orden de 
+/*
+Enunciado Ejercisio 4:
+Dada una cadena de texto, darle la vuelta e invertir el orden de 
 sus caracteres,
+
 sin usar métodos propios del lenguage, solo estructuras de control
 
 -Función con parámetro "texto"
