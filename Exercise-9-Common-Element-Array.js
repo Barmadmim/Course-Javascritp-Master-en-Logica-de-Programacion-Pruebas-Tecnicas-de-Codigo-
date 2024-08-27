@@ -16,7 +16,6 @@ elementosComunes([1,2,3,7],[2,2,7,3,4,5,2]) Devolver = ("2","3","7")
 */
 
 
-//Otra forma de hacerlo
 
 function arrayDeComunes(array1,array2){
 
