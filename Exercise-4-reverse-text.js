@@ -22,7 +22,3 @@ function invertir(texto){
 
 console.log("texto invertido es igual a", invertir("BryanRamirez"));
 
-//Sin estructuras de control sería
-function invertida(texto){
-    return texto.split("").reserve().join();
-}

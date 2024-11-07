@@ -41,7 +41,7 @@ function coincidencias(frase, busqueda){
   
 }
 
-coincidencias("Hola, Que tal, Soy Bryan Ramirez bryan", "hola");
+coincidencias("Hola, Que tal, Soy Bryan Ramirez bryan", "Hola");
 
 
 /*
