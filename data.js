@@ -131,3 +131,19 @@ function convertirAMayusculas(arrayStrings) {
 let palabras = ["hola", "mundo", "javascript"];
 let resultado = convertirAMayusculas(palabras);
 console.log(resultado);
+
+
+function primo(numero)
+{
+  let resultado = false;
+  if (numero % 2 !== 0)
+  {
+    resultado = true;
+  } else
+  {
+    resultado = false;
+  }
+  return resultado;
+}
+
+console.log(primo(1));
