@@ -1,15 +1,8 @@
 // node data.js
-
+/*
 for (let i = 0; i < 5; i++) {
   console.log(`hola ${i}`);
 }
-
-const numeros = [1, 2, 3, 4, 5];
-
-for (let i = 0; i < numeros.length; i++) {
-  console.log(`Elemento: ${numeros[i]}`);
-}
-console.log(numeros.length);
 
 let i = 0;
 while (i < 5) {
@@ -40,31 +33,6 @@ let nombres = ["alberto", "sobrino"]
 for (let valor of nombres) {
   console.log(valor)
 }
-
-let texto = "palabra"
-
-let vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";
-let contador = 0
-
-for (let i = 0; i < texto.length; i++) {
-  if (vocales.includes(texto[i])) {
-    contador++
-  }
-}
-console.log(`El número de vocales es: ${contador}`);
-
-for (let i = 1; i < 11; i++) {
-  console.log(`5 x ${i} = ${5 * i}`)
-}
-
-texto = "hola"
-let textoInvertido = ""
-
-for (let i = texto.length - 1; i >= 0; i--) {
-  textoInvertido += texto[i]
-}
-
-console.log(textoInvertido)
 
 
 let num1 = 0;
@@ -116,3 +84,50 @@ console.log(calcular(10, "x", 5)); // 50
 console.log(calcular(10, "/", 2)); // 5
 console.log(calcular(10, "/", 0)); // Error: No se puede dividir entre 0
 console.log(calcular(10, "&", 5)); // Error: Operador no válido
+
+*/
+
+function encontrarMayor(array) {
+  if (array.length === 0) {
+    return "El array está vacío";
+  }
+  let mayor = array[0];
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > mayor) {
+      mayor = array[i];
+    }
+  }
+  return mayor;
+}
+let numeros = [3, 5, 7, 2, 8, -7, 4];
+console.log(`El mayor número es: ${encontrarMayor(numeros)}`);
+
+
+
+
+function vocales(palabra) {
+  let vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";
+  let contador = 0;
+  for (let i = 0; i < palabra.length; i++) {
+    if (vocales.includes(palabra[i])) {
+      contador++;
+    }
+  }
+  return contador;
+}
+console.log(vocales("palabra"));
+
+
+function convertirAMayusculas(arrayStrings) {
+  let arrayMayusculas = [];
+
+  for (let i = 0; i < arrayStrings.length; i++) {
+      arrayMayusculas.push(arrayStrings[i].toUpperCase());
+  }
+
+  return arrayMayusculas;
+}
+
+let palabras = ["hola", "mundo", "javascript"];
+let resultado = convertirAMayusculas(palabras);
+console.log(resultado);
