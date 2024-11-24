@@ -84,3 +84,13 @@ for (let i = 3; i <= 10; i++) {
     num1 = num2;
     num2 = siguiente;
 }
+
+let numero10 = [11, 1, 24, 556, 4, 9, 5]
+
+for (let valor of numero10)
+{
+  if (valor >= 10)
+  {
+    console.log(valor)
+  }
+}
