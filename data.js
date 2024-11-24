@@ -97,5 +97,5 @@ for (let valor of numero10)
 
 function sumar(num1, num2)
 {
-  console.log(num1 + num2)
+  console.log(`${num1} + ${num2} = `, num1 + num2)
 }
