@@ -85,7 +85,7 @@ console.log(calcular(10, "/", 2)); // 5
 console.log(calcular(10, "/", 0)); // Error: No se puede dividir entre 0
 console.log(calcular(10, "&", 5)); // Error: Operador no válido
 
-*/
+
 
 function encontrarMayor(array) {
   if (array.length === 0) {
@@ -147,3 +147,23 @@ function primo(numero)
 }
 
 console.log(primo(1));
+console.log(primo(2));
+*/
+
+function elementosComunes(array1, array2) {
+  let comunes = []; 
+
+  for (let i = 0; i < array1.length; i++) {
+      if (array2.includes(array1[i])) {
+          comunes.push(array1[i]);
+      }
+  }
+
+  return comunes;
+}
+
+// Ejemplo de uso
+let array1 = [1, 2, 3, 4, 5];
+let array2 = [4, 5, 6, 7, 8];
+let resultado = elementosComunes(array1, array2);
+console.log(resultado);
