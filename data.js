@@ -235,3 +235,9 @@ class sumar {
 }
 
 console.log(sumar.sum(5, 10))
+
+try {
+  console.log(myObject.email)
+} catch (error) {
+  console.log("Se ha producido un error:", error.message)
+}
