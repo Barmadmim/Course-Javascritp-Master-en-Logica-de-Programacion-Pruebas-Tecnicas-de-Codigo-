@@ -151,12 +151,12 @@ console.log(primo(2));
 */
 
 function elementosComunes(array1, array2) {
-  let comunes = []; 
+  let comunes = [];
 
   for (let i = 0; i < array1.length; i++) {
-      if (array2.includes(array1[i])) {
-          comunes.push(array1[i]);
-      }
+    if (array2.includes(array1[i])) {
+      comunes.push(array1[i]);
+    }
   }
 
   return comunes;
@@ -167,3 +167,48 @@ let array1 = [1, 2, 3, 4, 5];
 let array2 = [4, 5, 6, 7, 8];
 let resultado = elementosComunes(array1, array2);
 console.log(resultado);
+
+
+class Animal {
+  #name
+  #id
+  constructor(name = "Dog", strong = 5, heart = 10, id = "") {
+    this.#name = name
+    this.strong = strong
+    this.heart = heart
+    this.#id = id
+  }
+  walk() {
+    console.log("Caminando...")
+  }
+  sleep() {
+    console.log("Durmiendo...")
+  }
+  hunter() {
+    console.log("Cazando...")
+  }
+  get name() {
+    return this.#name
+  }
+  get id() {
+    return this.#id
+  }
+  set id(id) {
+    this.#id = id
+  }
+}
+
+let Perro = new Animal()
+console.log(Perro)
+console.log(Perro.name)
+Perro.walk()
+
+let Gato = new Animal("Cat", 2, 8)
+console.log(Gato)
+console.log(Gato.name)
+
+Gato.id = "14567573545456"
+console.log(Gato.id)
+
+Gato.sleep()
+
