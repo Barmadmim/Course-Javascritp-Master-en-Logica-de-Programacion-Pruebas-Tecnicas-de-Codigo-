@@ -212,3 +212,26 @@ console.log(Gato.id)
 
 Gato.sleep()
 
+class Dog extends Animal {
+
+  walk() {
+      console.log("Guau!")
+  }
+
+  run() {
+      console.log("El perro corre")
+  }
+
+}
+
+let myDog = new Dog("MoureDog")
+myDog.run()
+myDog.walk()
+
+class sumar {
+    static sum(a, b) {
+      return a + b
+    }
+}
+
+console.log(sumar.sum(5, 10))
